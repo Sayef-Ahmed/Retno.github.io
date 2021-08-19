@@ -1,0 +1,945 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*------ homeimage -------*/
+
+.homeimage{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    padding-top: 130px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.homeimage .h1{
+    font-size: 60px;
+}
+
+/*------------------------------ Header Navbar ---------------------------------------*/
+
+.nav{
+    width: calc(145% - 100px);
+    background: #777777;
+    box-shadow: 0 41px 35px rgb(255 255 255 / 5%);
+    /* border-radius: 49px; */
+    display: flex;
+    position: absolute;
+    width: 74%;
+    /* padding: 6px; */
+    padding-right: 395px;
+    /* padding-bottom: 2px; */
+    /* left: 9px; */
+    /* top: 14px;*/
+}
+
+.midia{
+    display: flex;
+    height: auto;
+    margin-left: 60px;
+    margin: 20px;
+    cursor: pointer;
+}
+.midia a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+.midia a:hover, .midia a.active{
+    color: tomato;
+    padding: 20px, 15px;
+}
+
+/*----------------------------------- Logo-Image -----------------------------*/
+.image{
+    margin-left: 18px;
+}
+.image img{
+    height: 57px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 5px;
+    /* position: relative; */
+    top: 6px;
+}
+
+/*----------------------------------- Social-Midia -----------------------------*/
+
+.midia {
+    display: flex;
+    height: auto;
+    margin-left: 60px;
+    margin: 20px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.facebook{
+    display: inline-block;
+    margin-top: -10px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 60px;
+    border: 2px solid ;
+    box-shadow: -5px -5px 8px #1a2d88, 5px 8px 10px red;
+    border-radius: 50px;
+}
+.twitter{
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: 7px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 60px;
+    border: 2px solid ;
+    box-shadow: -5px -5px 8px #1a2d88, 5px 8px 10px red;
+    border-radius: 50px;
+}
+.midia i{
+    font-size: 30px;
+}
+
+/*---------------------------------- Menu-Bar ---------------------------------*/
+
+.at{
+    display: flex;
+    margin-left: 282px;
+    width: 50%;
+}
+.home{
+    font-size: 22px;
+    padding:20px;
+    position: relative;
+    width: 115px;
+    cursor: pointer;
+}
+.home a{
+    color:black;
+    text-decoration: none;
+}
+.home a:hover, .home a.active{
+    text-decoration: none;
+    /*color: tomato;*/
+    padding: 20px, 15px;
+}
+.home h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*
+.home .Red-blue:hover, .home .Red-blue.active{
+    border-radius: 25px;
+    color: blue;
+    box-shadow:  -5px -5px 10px red, 5px 5px 10px red;
+}
+.home .Yellow-red:hover, .home .Yellow-red.active{
+    border-radius: 25px;
+    color: red;
+    box-shadow: -5px -5px 10px yellow, 5px 5px 10px yellow;
+}
+.home .Green-yellow:hover, .home .Green-yellow.active{
+    border-radius: 25px;
+    color: yellow;
+    box-shadow: -5px -5px 10px green, 5px 5px 10px green;
+}
+.home .Blue-green:hover, .home .Blue-green.active{
+    border-radius: 25px;
+    color: green;
+    box-shadow: -5px -5px 10px blue, 5px 5px 10px blue;
+}
+*/
+.home a:hover, .home a.active{
+    color: rgb(228, 13, 13);
+    padding: 20px, 15px;
+}
+.right{
+    font-size: 22px;
+    margin: 20px;
+    margin-left: 292px;
+    left: 10px;
+    cursor: pointer;
+}
+.right a{
+    color: black;
+    text-decoration: none;
+}
+.right a:hover, .right a.active{
+    text-decoration: underline;
+    color: rgb(228, 13, 13);
+    padding: 20px, 15px;
+}
+
+/*------------- Box-Pricing-Offers  -------------------*/
+
+.box-aaa{
+    padding-top: 70px;
+    width: 100%;
+}
+/*------- buy-now-hosting -------*/
+
+.box-a-11{
+    background: linear-gradient(-30deg, #1ec4e9 0%,#673ab7 50%,#262626 50%,#607d8b 100%); 
+    padding: 33px;
+    height: 22%;
+    font-size: 32px;
+}
+.box-a-11 p{
+    color: white;
+}
+.buy-now-hosting{
+    text-decoration: none;
+    background: linear-gradient(-30deg, #1ec4e9 0%,#673ab7 50%,#262626 50%,#607d8b 100%); 
+    color: red;
+    padding:6px;
+}
+.bt{
+    padding-left: 506px;
+}
+.buy-now-hosting:hover{
+    box-shadow: 2.5px 2.5px 2.5px 2.5px white ,-2.5px -2.5px 2.5px 2.5px white;
+}
+
+
+/*------------------------------------ Section-3 ------------------------------------------*/
+
+.h-secondary-center-our-services h2{
+    margin: 0;
+    line-height: 1.7;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient( to left, #5ff281, #5f86f2, #a65ff2,
+    #f25fd0, #f25f61, #f2cb5f);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size:500%;
+    background-size: 500%;
+    text-align: center;
+}
+.box-5-5{
+    padding: 5px;
+    background: black;
+}
+.box-5-5 h2{
+    font-size: 32px;
+    text-transform: none;
+}
+
+/*-------------------------------------------- Box-Pricing ---------------------------------*/
+
+.services-container{
+    background-color: #474747;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Section-Box-4 */
+/*
+.box-4 p{
+    color: rgb(209, 198, 198);
+}
+*/
+.box-4{
+    border: 4px solid transparent;
+    background-color: #474747;
+    text-align: center;
+    padding: 56px;
+    padding-bottom: 846px;
+    height: 14px;
+   /* width: 133px; */
+    transform: translate(0%,0%);
+    border-image: linear-gradient(45deg,#5ff281, #5f86f2, #a65ff2,
+    #f25fd0, #f25f61, #f2cb5f);
+    border-image-slice: 1;
+}
+
+.box-4 ul{
+    text-align: -webkit-left;
+}
+.box-4 li{
+    color: white;
+    list-style: none;
+    /* border-top: 1.5px solid white; */
+    padding-top: 10px;
+    margin-bottom: -5px;
+}
+
+/* Section-Box-4 */
+
+.h-secondary-center h2{
+    margin: 0;
+    line-height: 1.7;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient( to left, #5ff281, #5f86f2, #a65ff2,
+    #f25fd0, #f25f61, #f2cb5f);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size:500%;
+    background-size: 500%;
+    text-align: center;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}
+
+/*------------- icon -------------------*/
+
+/*------ box-a --------*/
+.center-a-1::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 124px;
+    left: 34px;
+}
+.center-a-2::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 164px;
+    left: 34px;
+}
+.center-a-3::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 207px;
+    left: 34px;
+}
+.center-a-4::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 248px;
+    left: 34px;
+}
+.center-a-5::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 290px;
+    left: 34px;
+}
+.center-a-6::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 332px;
+    left: 34px;
+}
+.center-a-7::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 374px;
+    left: 34px;
+}
+.center-a-8::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 416px;
+    left: 34px;
+}
+.center-a-9::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 458px;
+    left: 34px;
+}
+.center-a-10::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 498px;
+    left: 34px;
+}
+.center-a-11::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 541px;
+    left: 34px;
+}
+.center-a-12::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 582px;
+    left: 34px;
+}
+.center-a-13::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 624px;
+    left: 34px;
+}
+.center-a-14::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 666px;
+    left: 34px;
+}
+.center-a-15::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 708px;
+    left: 34px;
+}
+
+/*------ box-b --------*/
+.center-b-1::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 124px;
+    left: 34px;
+}
+.center-b-2::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 164px;
+    left: 34px;
+}
+.center-b-3::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 207px;
+    left: 34px;
+}
+.center-b-4::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 248px;
+    left: 34px;
+}
+.center-b-5::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 290px;
+    left: 34px;
+}
+.center-b-6::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 332px;
+    left: 34px;
+}
+.center-b-7::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 374px;
+    left: 34px;
+}
+.center-b-8::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 416px;
+    left: 34px;
+}
+.center-b-9::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 458px;
+    left: 34px;
+}
+.center-b-10::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 498px;
+    left: 34px;
+}
+.center-b-11::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 541px;
+    left: 34px;
+}
+.center-b-12::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 582px;
+    left: 34px;
+}
+.center-b-13::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 624px;
+    left: 34px;
+}
+.center-b-14::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 666px;
+    left: 34px;
+}
+.center-b-15::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 708px;
+    left: 34px;
+}
+
+/*------ box-c --------*/
+.center-c-1::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 124px;
+    left: 34px;
+}
+.center-c-2::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 164px;
+    left: 34px;
+}
+.center-c-3::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 207px;
+    left: 34px;
+}
+.center-c-4::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 248px;
+    left: 34px;
+}
+.center-c-5::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 290px;
+    left: 34px;
+}
+.center-c-6::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 332px;
+    left: 34px;
+}
+.center-c-7::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 374px;
+    left: 34px;
+}
+.center-c-8::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 416px;
+    left: 34px;
+}
+.center-c-9::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 458px;
+    left: 34px;
+}
+.center-c-10::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 498px;
+    left: 34px;
+}
+.center-c-11::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 541px;
+    left: 34px;
+}
+.center-c-12::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 582px;
+    left: 34px;
+}
+.center-c-13::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 624px;
+    left: 34px;
+}
+.center-c-14::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 666px;
+    left: 34px;
+}
+.center-c-15::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 708px;
+    left: 34px;
+}
+
+/*------ box-d --------*/
+.center-d-1::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 124px;
+    left: 34px;
+}
+.center-d-2::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 164px;
+    left: 34px;
+}
+.center-d-3::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 207px;
+    left: 34px;
+}
+.center-d-4::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 248px;
+    left: 34px;
+}
+.center-d-5::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 290px;
+    left: 34px;
+}
+.center-d-6::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 332px;
+    left: 34px;
+}
+.center-d-7::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 374px;
+    left: 34px;
+}
+.center-d-8::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 416px;
+    left: 34px;
+}
+.center-d-9::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 458px;
+    left: 34px;
+}
+.center-d-10::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 498px;
+    left: 34px;
+}
+.center-d-11::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 541px;
+    left: 34px;
+}
+.center-d-12::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 582px;
+    left: 34px;
+}
+.center-d-13::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 624px;
+    left: 34px;
+}
+.center-d-14::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 666px;
+    left: 34px;
+}
+.center-d-15::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 708px;
+    left: 34px;
+}
+
+/*------------- doller -------------------*/
+
+.taka h1{
+    font-size: 35px;
+}
+
+.taka h1{
+    margin: 0;
+    line-height: 1.7;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient( to left, #5ff281, #5f86f2, #a65ff2,
+    #f25fd0, #f25f61, #f2cb5f);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size:500%;
+    background-size: 500%;
+    text-align: center;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}
+
+/*------------- button -------------------*/
+
+.button{
+    position: relative;
+    width: 69px;
+    height: 43px;
+    line-height: 48px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    display: block;
+    padding: 3px 32px;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg, #fb0094,#00f,#0f0,#ff0,#f00,#fb0094,#00f,#0f0,#ff0,#f00) ;
+    background-size: 400%;
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 15s linear infinite;
+}
+.button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg, #fb0094,#00f,#0f0,#ff0,#f00,#fb0094,#00f,#0f0,#ff0,#f00) ;
+    background-size: 400%;
+    opacity: 0;
+    filter: blur(20px);
+    transition:  0.5s;
+    animation: animate 15s linear infinite;
+}
+.button:hover::before,
+.button:hover:after
+{
+    opacity: 1;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 300% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.button span{
+    position: absolute;
+    display: block;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    text-align: center;
+    background: #0c0c0c;
+    color: red;
+    transition: 0.5s;
+    z-index: 1;
+}
+.button:hover span{
+    color: white;
+}
+
+.button span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255,255,255,0.1) ;
+}
+
+/*------------- Using Plugins  -------------------*/
+
+.box-5{
+    background: black;
+}
+.box-5 h2{
+    font-size: 32px;
+    text-transform: none;
+}
+.box-6-using-plugins{
+    background-color: #474747;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-6{
+    background-color: #474747;
+    text-align: center;
+    padding: 56px;
+    padding-bottom: 158px;
+    height: 14px;
+}
+.box-6 p{
+    color: white;
+}
+/*------------------- Notice ----------------------*/
+.box-a-3{
+    background-color: yellow;
+    margin-top: -70px;
+    padding: 33px;
+    height: 22%;
+    font-size: 24px;
+}
+.box-a-3 p{
+    padding-left: 276px;
+    color: red;
+}
+/*-------------------- FAQ ------------------------*/
+.box-price-offers-2{
+    height: 410px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/*------- FAQ -------*/
+summary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+  }
+.faq{
+    border-bottom: 2px solid black;
+}
+.ans{
+    border-bottom: 2px solid black;
+}
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+
+   /*--------------------------------------- footer ---------------------------------------*/
+
+.footer{
+    display: flex;
+    background: gray;
+    padding-left: 4px;
+    height: 90px;
+    width: 1515px;
+}
+.icon-footer{
+    padding-left: 72px;
+}
+.box-88{
+    padding-top: 22px;
+    color: white;
+    padding-left: 276px;
+}

@@ -1,0 +1,1289 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*------ homeimage -------*/
+
+.homeimage::before{ 
+    content: "";
+    position: absolute;
+    background-color:  #0a0a0a;  /*url(./image/kevin-bhagat-zNRITe8NPqY-unsplash.jpg) no-repeat center center/cover ;*/
+    background-attachment: fixed;
+    height: 1060px;
+    top: -269px;
+    /* bottom: 0px; */
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.97;
+}
+.homeimage{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    padding-top: 130px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.homeimage .h1{
+    font-size: 60px;
+}
+
+/*------------------------------ Header Navbar ---------------------------------------*/
+
+.nav{
+    width: calc(100% - 100px); 
+    background:  #777777; /* rgba(255, 255, 255, 0.5); */
+    box-shadow: 0 15px 35px rgb(255 255 255 / 5%);
+    border-radius: 60px;
+    display: flex;
+    position: absolute;
+    width: 74%;
+    /*padding: 6px;*/
+    padding-right: 23%;
+    left: 19px;
+    top: 14px;
+}
+
+.midia{
+    display: flex;
+    height: auto;
+    margin-left: 60px;
+    margin: 20px;
+    cursor: pointer;
+}
+.midia a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+.midia a:hover, .midia a.active{
+    color: tomato;
+    padding: 20px, 15px;
+}
+
+/*----------------------------------- Logo-Image -----------------------------*/
+
+.image img{
+    height: 57px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 5px;
+    /* position: relative; */
+    top: 6px;
+}
+
+/*----------------------------------- Social-Midia -----------------------------*/
+
+.midia {
+    display: flex;
+    height: auto;
+    margin-left: 60px;
+    margin: 20px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.facebook{
+    display: inline-block;
+    margin-top: -10px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 60px;
+    border: 2px solid ;
+    box-shadow: -5px -5px 8px #1a2d88, 5px 8px 10px red;
+    border-radius: 50px;
+}
+.twitter{
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: 7px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 60px;
+    border: 2px solid ;
+    box-shadow: -5px -5px 8px #1a2d88, 5px 8px 10px red;
+    border-radius: 50px;
+}
+.midia i{
+    font-size: 30px;
+}
+
+/*---------------------------------- Menu-Bar ---------------------------------*/
+
+.at{
+    display: flex;
+    margin-left: 251px;
+    width: 50%;
+}
+.home{
+    padding:20px;
+    position: relative;
+    width: 115px;
+    cursor: pointer;
+}
+.home a{
+    color:black;
+    text-decoration: none;
+}
+.home a:hover, .home a.active{
+    text-decoration: none;
+    /*color: tomato;*/
+    padding: 20px, 15px;
+}
+.home h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*
+.home .Red-blue:hover, .home .Red-blue.active{
+    border-radius: 25px;
+    color: blue;
+    box-shadow:  -5px -5px 10px red, 5px 5px 10px red;
+}
+.home .Yellow-red:hover, .home .Yellow-red.active{
+    border-radius: 25px;
+    color: red;
+    box-shadow: -5px -5px 10px yellow, 5px 5px 10px yellow;
+}
+.home .Green-yellow:hover, .home .Green-yellow.active{
+    border-radius: 25px;
+    color: yellow;
+    box-shadow: -5px -5px 10px green, 5px 5px 10px green;
+}
+.home .Blue-green:hover, .home .Blue-green.active{
+    border-radius: 25px;
+    color: green;
+    box-shadow: -5px -5px 10px blue, 5px 5px 10px blue;
+}
+*/
+.home a:hover, .home a.active{
+    color: rgb(228, 13, 13);
+    padding: 20px, 15px;
+}
+.right{
+    margin: 20px;
+    margin-left: 318px;
+    left: 10px;
+    cursor: pointer;
+}
+.right a{
+    color: black;
+    text-decoration: none;
+}
+.right a:hover, .right a.active{
+    text-decoration: underline;
+    color: rgb(228, 13, 13);
+    padding: 20px, 15px;
+}
+
+/*------------------------------- SearchBar ----------------------------------*/
+
+form{
+    position: relative;
+    top: 130px;
+    left: 140px;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+    box-shadow: -5px -5px 8px #1a2d88, 5px 8px 10px red;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+form:hover{
+    width: 200px;
+    cursor: pointer;
+    box-shadow: -5px -5px 10px tomato, 5px 5px 10px tomato;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: white;
+}
+
+/*---------------------------- Section-1 Home Part -----------------------*/
+
+/*---- welcome ------*/
+
+.welcome h3{
+    margin: 0;
+    line-height: 1.7;
+    font-size: 90px;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient( to left, #2ecc71,#3498db,#9b59b6,#f39c12, rgb(243, 66, 12)
+    , red, rgb(247, 197, 122), rgb(173, 243, 11), green);
+    /*----------- some problem ----------------*/
+    -webkit-background-clip: text;    /*---> thakbe na (-webkit-background-clip: text;--> eta thakbe)*/
+    animation: animate 5s linear infinite;
+    -webkit-background-size:500%;
+    background-size: 500%;
+    text-align: center;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}
+
+/*----------------------- fire text --------------------------------*/
+
+.text{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    filter: url(#fire);
+}
+.text h2{
+    position: relative;
+    color: #ffeb3b;
+    font-weight: 600;
+    font-size: 7em;
+    -webkit-box-reflect: below -29px linear-gradient(transparent,#0008);
+    text-shadow: 0 0 10px #ff8c3b,0 0 40px #ff8c3b,0 0 80px #ff8c3b,
+                 0 0 160px #ff8c3b,0 0 240px #ff8c3b;
+}
+svg{
+    width: 0;
+    height: 0;
+}
+
+/*----------------------- Glitch --------------------------------*/
+
+.text-center {
+    text-align: center!important;
+}
+.error {
+    color: green /* #5a5c69*/;
+    text-shadow: 0 0 10px rgb(36, 230, 36), 0 0 40px rgb(36, 230, 36);
+    font-size: 4.5rem;
+    position: relative;
+    line-height: 1;
+    width: 41.5rem;
+    top: 180px;
+}
+.mx-auto {
+    margin: auto;
+}
+.error:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 8px;
+    text-shadow: 1px 0 #4e73df;
+    top: 0;
+    color: green /* #5a5c69 */;
+    background: white;
+    overflow: hidden;
+    clip: rect(0,900px,0,0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+.error:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 14px;
+    text-shadow: -1px 0 #e74a3b;
+    top: 0;
+    color: green /* #5a5c69 */;
+    background: white;
+    overflow: hidden;
+    clip: rect(0,900px,0,0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+.text-gray-800 {
+    color: #5a5c69!important;
+}
+.mb-5, .my-5 {
+    margin-bottom: 3rem!important;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+@-webkit-keyframes noise-anim{
+  0%{clip:rect(89px,9999px,100px,0)}
+  5%{clip:rect(4px,9999px,62px,0)}
+  10%{clip:rect(43px,9999px,16px,0)}
+  15%{clip:rect(2px,9999px,68px,0)}
+  20%{clip:rect(12px,9999px,6px,0)}
+  25%{clip:rect(89px,9999px,25px,0)}
+  30%{clip:rect(15px,9999px,38px,0)}
+  35%{clip:rect(57px,9999px,97px,0)}
+  40%{clip:rect(24px,9999px,72px,0)}
+  45%{clip:rect(81px,9999px,3px,0)}
+  50%{clip:rect(93px,9999px,26px,0)}
+  55%{clip:rect(68px,9999px,85px,0)}
+  60%{clip:rect(43px,9999px,28px,0)}
+  65%{clip:rect(44px,9999px,11px,0)}
+  70%{clip:rect(17px,9999px,33px,0)}
+  75%{clip:rect(74px,9999px,66px,0)}
+  80%{clip:rect(100px,9999px,4px,0)}
+  85%{clip:rect(92px,9999px,31px,0)}
+  90%{clip:rect(93px,9999px,98px,0)}
+  95%{clip:rect(23px,9999px,77px,0)}
+  100%{clip:rect(92px,9999px,8px,0)}
+}
+
+@keyframes noise-anim{
+  0%{clip:rect(89px,9999px,100px,0)}
+  5%{clip:rect(4px,9999px,62px,0)}
+  10%{clip:rect(43px,9999px,16px,0)}
+  15%{clip:rect(2px,9999px,68px,0)}
+  20%{clip:rect(12px,9999px,6px,0)}
+  25%{clip:rect(89px,9999px,25px,0)}
+  30%{clip:rect(15px,9999px,38px,0)}
+  35%{clip:rect(57px,9999px,97px,0)}
+  40%{clip:rect(24px,9999px,72px,0)}
+  45%{clip:rect(81px,9999px,3px,0)}
+  50%{clip:rect(93px,9999px,26px,0)}
+  55%{clip:rect(68px,9999px,85px,0)}
+  60%{clip:rect(43px,9999px,28px,0)}
+  65%{clip:rect(44px,9999px,11px,0)}
+  70%{clip:rect(17px,9999px,33px,0)}
+  75%{clip:rect(74px,9999px,66px,0)}
+  80%{clip:rect(100px,9999px,4px,0)}
+  85%{clip:rect(92px,9999px,31px,0)}
+  90%{clip:rect(93px,9999px,98px,0)}
+  95%{clip:rect(23px,9999px,77px,0)}
+  100%{clip:rect(92px,9999px,8px,0)}
+}
+
+.section .text-center{
+    z-index: 1;
+}
+.section::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    top: 598px;
+    left: 0px;
+    background: white;
+    height: 196px;
+    width: 100%;
+    border-radius: 1000% 1000% 0 0;
+    box-shadow: -5px -5px 10px #0a0a0a,-5px -5px 20px #0a0a0a ;
+    background-color: white;
+}
+
+/*--------------------------------------- Section-2 ---------------------------------------*/
+
+.section-2{
+    border: 2px solid green;
+    margin-top: 208px;
+}
+.services-about{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*------------------- Number-Counter ---------------------*/
+.Number-Counter{
+    margin-top: 210px;
+    height: 260px;
+    background-color: gray;
+    padding-top: 30px;
+}
+/*
+.section-2 .services-about .box-1-c{
+    border: 2px solid red;
+    padding: 31px;
+    padding-bottom: 65px;
+    padding-top: 65px;
+    height: 100px;
+    width: 100%;
+    background-color: #e2e2e2;
+}
+*/
+.counter {
+    background-color:#f5f5f5;
+    padding: 50px;
+    border-radius: 5px;
+    flex-direction: column;
+    margin-left: 92px;
+}
+.text-center{
+    display: flex;
+}
+.col{
+    padding-left: 25px;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: red;
+}
+
+/*--------------------------------------- Section-3 ---------------------------------------*/
+
+/* Services Section */
+/*
+.our-services{
+    border: 2px solid rgb(197, 195, 195);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 87px;
+}
+*/
+
+/*-------------- Our Service --------------------------*/
+.h-secondary-center-our-services h2{
+    margin: 0;
+    line-height: 1.7;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient( to left, #5ff281, #5f86f2, #a65ff2,
+    #f25fd0, #f25f61, #f2cb5f);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size:500%;
+    background-size: 500%;
+    text-align: center;
+}
+.box-5-5{
+    padding: 5px;
+    background: black;
+}
+.box-5-5 h2{
+    font-size: 32px;
+    text-transform: none;
+}
+/*-------------------------------------------- Box-Pricing ---------------------------------*/
+.services-container{
+    background-color: #474747;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Section-Box-4 */
+/*
+.box-4 p{
+    color: rgb(209, 198, 198);
+}
+*/
+.box-4{
+    border: 4px solid transparent;
+    background-color: #474747;
+    text-align: center;
+    padding: 56px;
+    padding-bottom: 846px;
+    height: 14px;
+   /* width: 133px; */
+    transform: translate(0%,0%);
+    border-image: linear-gradient(45deg,#5ff281, #5f86f2, #a65ff2,
+    #f25fd0, #f25f61, #f2cb5f);
+    border-image-slice: 1;
+}
+
+.box-4 ul{
+    text-align: -webkit-left;
+}
+.box-4 li{
+    color: white;
+    list-style: none;
+    /* border-top: 1.5px solid white; */
+    padding-top: 10px;
+    margin-bottom: -5px;
+}
+
+/* Section-Box-4 */
+
+.h-secondary-center h2{
+    margin: 0;
+    line-height: 1.7;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient( to left, #5ff281, #5f86f2, #a65ff2,
+    #f25fd0, #f25f61, #f2cb5f);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size:500%;
+    background-size: 500%;
+    text-align: center;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}
+
+/*------------- icon -------------------*/
+
+/*------ box-a --------*/
+.center-a-1::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 124px;
+    left: 34px;
+}
+.center-a-2::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 164px;
+    left: 34px;
+}
+.center-a-3::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 207px;
+    left: 34px;
+}
+.center-a-4::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 248px;
+    left: 34px;
+}
+.center-a-5::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 290px;
+    left: 34px;
+}
+.center-a-6::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 332px;
+    left: 34px;
+}
+.center-a-7::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 374px;
+    left: 34px;
+}
+.center-a-8::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 416px;
+    left: 34px;
+}
+.center-a-9::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 458px;
+    left: 34px;
+}
+.center-a-10::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 498px;
+    left: 34px;
+}
+.center-a-11::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 541px;
+    left: 34px;
+}
+.center-a-12::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 582px;
+    left: 34px;
+}
+.center-a-13::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 624px;
+    left: 34px;
+}
+.center-a-14::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 666px;
+    left: 34px;
+}
+.center-a-15::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 708px;
+    left: 34px;
+}
+
+/*------ box-b --------*/
+.center-b-1::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 124px;
+    left: 34px;
+}
+.center-b-2::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 164px;
+    left: 34px;
+}
+.center-b-3::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 207px;
+    left: 34px;
+}
+.center-b-4::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 248px;
+    left: 34px;
+}
+.center-b-5::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 290px;
+    left: 34px;
+}
+.center-b-6::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 332px;
+    left: 34px;
+}
+.center-b-7::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 374px;
+    left: 34px;
+}
+.center-b-8::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 416px;
+    left: 34px;
+}
+.center-b-9::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 458px;
+    left: 34px;
+}
+.center-b-10::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 498px;
+    left: 34px;
+}
+.center-b-11::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 541px;
+    left: 34px;
+}
+.center-b-12::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 582px;
+    left: 34px;
+}
+.center-b-13::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 624px;
+    left: 34px;
+}
+.center-b-14::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 666px;
+    left: 34px;
+}
+.center-b-15::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 708px;
+    left: 34px;
+}
+
+/*------ box-c --------*/
+.center-c-1::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 124px;
+    left: 34px;
+}
+.center-c-2::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 164px;
+    left: 34px;
+}
+.center-c-3::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 207px;
+    left: 34px;
+}
+.center-c-4::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 248px;
+    left: 34px;
+}
+.center-c-5::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 290px;
+    left: 34px;
+}
+.center-c-6::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 332px;
+    left: 34px;
+}
+.center-c-7::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 374px;
+    left: 34px;
+}
+.center-c-8::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 416px;
+    left: 34px;
+}
+.center-c-9::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 458px;
+    left: 34px;
+}
+.center-c-10::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 498px;
+    left: 34px;
+}
+.center-c-11::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 541px;
+    left: 34px;
+}
+.center-c-12::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 582px;
+    left: 34px;
+}
+.center-c-13::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 624px;
+    left: 34px;
+}
+.center-c-14::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 666px;
+    left: 34px;
+}
+.center-c-15::before{
+    content: "\2716";
+    color: red;
+    position: absolute;
+    top: 708px;
+    left: 34px;
+}
+
+/*------ box-d --------*/
+.center-d-1::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 124px;
+    left: 34px;
+}
+.center-d-2::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 164px;
+    left: 34px;
+}
+.center-d-3::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 207px;
+    left: 34px;
+}
+.center-d-4::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 248px;
+    left: 34px;
+}
+.center-d-5::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 290px;
+    left: 34px;
+}
+.center-d-6::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 332px;
+    left: 34px;
+}
+.center-d-7::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 374px;
+    left: 34px;
+}
+.center-d-8::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 416px;
+    left: 34px;
+}
+.center-d-9::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 458px;
+    left: 34px;
+}
+.center-d-10::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 498px;
+    left: 34px;
+}
+.center-d-11::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 541px;
+    left: 34px;
+}
+.center-d-12::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 582px;
+    left: 34px;
+}
+.center-d-13::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 624px;
+    left: 34px;
+}
+.center-d-14::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 666px;
+    left: 34px;
+}
+.center-d-15::before{
+    content: "\2714";
+    color: rgb(0, 0, 255);
+    position: absolute;
+    top: 708px;
+    left: 34px;
+}
+
+/*------------- doller -------------------*/
+
+.taka h1{
+    font-size: 35px;
+}
+
+.taka h1{
+    margin: 0;
+    line-height: 1.7;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient( to left, #5ff281, #5f86f2, #a65ff2,
+    #f25fd0, #f25f61, #f2cb5f);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size:500%;
+    background-size: 500%;
+    text-align: center;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}
+
+/*------------- button -------------------*/
+
+.button{
+    position: relative;
+    width: 69px;
+    height: 43px;
+    line-height: 48px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    display: block;
+    padding: 3px 32px;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg, #fb0094,#00f,#0f0,#ff0,#f00,#fb0094,#00f,#0f0,#ff0,#f00) ;
+    background-size: 400%;
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 15s linear infinite;
+}
+.button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg, #fb0094,#00f,#0f0,#ff0,#f00,#fb0094,#00f,#0f0,#ff0,#f00) ;
+    background-size: 400%;
+    opacity: 0;
+    filter: blur(20px);
+    transition:  0.5s;
+    animation: animate 15s linear infinite;
+}
+.button:hover::before,
+.button:hover:after
+{
+    opacity: 1;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 300% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.button span{
+    position: absolute;
+    display: block;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    text-align: center;
+    background: #0c0c0c;
+    color: red;
+    transition: 0.5s;
+    z-index: 1;
+}
+.button:hover span{
+    color: white;
+}
+
+.button span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255,255,255,0.1) ;
+}
+
+/*------------- Using Plugins  -------------------*/
+
+.box-5{
+    background: black;
+}
+.box-5 h2{
+    font-size: 32px;
+    text-transform: none;
+}
+.box-6-using-plugins{
+    background-color: #474747;
+    /*
+    padding-top: 40px;
+    padding-bottom: 40px;
+    */
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-6{
+    background-color: #474747;
+    text-align: center;
+    padding: 56px;
+    padding-bottom: 158px;
+    height: 14px;
+}
+.box-6 p{
+    color: white;
+}
+
+/*------------- Box-Pricing-Offers  -------------------*/
+
+.Box-price-Offers{
+    display: flex;
+    height: 758px;
+}
+.box-price-offers-1{
+    height: 756px;
+}
+.box-aaa{
+    width: 100%;
+    height: 778px;
+}
+/*------- buy-now-hosting -------*/
+.box-a-1{
+    background: linear-gradient(-30deg, #1ec4e9 0%,#673ab7 50%,#262626 50%,#607d8b 100%); 
+    padding: 33px;
+    width: 944px;
+    height: 22%;
+    font-size: 32px;
+}
+.box-a-1 p{
+    color: white;
+}
+.buy-now-hosting{
+    text-decoration: none;
+    background: linear-gradient(-30deg, #1ec4e9 0%,#673ab7 50%,#262626 50%,#607d8b 100%); 
+    color: red;
+    padding:6px;
+}
+.bt{
+    padding-left: 269px;
+}
+.buy-now-hosting:hover{
+    box-shadow: 2.5px 2.5px 2.5px 2.5px white ,-2.5px -2.5px 2.5px 2.5px white;
+}
+/*-------------------- Offers Packags ------------------------*/
+.box-a-2{
+    display: flex;
+    width: 100%;
+    height: 292px;
+}
+.box-4-a{
+    border: 4px solid transparent;
+    background-color: #474747;
+    text-align: center;
+    padding: 56px;
+    padding-bottom: 217px;
+    height: 14px;
+   /* width: 133px; */
+    transform: translate(0%,0%);
+    border-image: linear-gradient(45deg,#5ff281, #5f86f2, #a65ff2,
+    #f25fd0, #f25f61, #f2cb5f);
+    border-image-slice: 1;
+}
+/*------------------- Notice ----------------------*/
+.box-a-3{
+    background-color: yellow;
+    padding: 33px;
+    width: 944px;
+    height: 21%;
+    font-size: 24px;
+}
+.box-a-3 p{
+    padding-top: 54px;
+    color: red;
+}
+/*-------------------- FAQ ------------------------*/
+.box-price-offers-2{
+    width: 50%;
+    height: 756px;
+}
+/*------- FAQ -------*/
+summary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+  }
+/*
+.faq{
+    border: 2px solid red;
+}
+.ans{
+    border: 2px solid red;
+}
+*/
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+
+  /*--------------------------------------- footer ---------------------------------------*/
+
+.footer{
+    display: flex;
+    background: gray;
+    padding-left: 4px;
+    height: 90px;
+    width: 1515px;
+}
+.icon-footer{
+    padding-left: 72px;
+}
+.box-88{
+    padding-top: 22px;
+    color: white;
+    padding-left: 276px;
+}
